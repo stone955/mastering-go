@@ -1,9 +1,9 @@
-package main
+package mock
 
 import (
 	"testing"
 
-	"mastering-go/mock/equipment"
+	"mastering-go/internal/pkg/mock/equipment"
 
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"

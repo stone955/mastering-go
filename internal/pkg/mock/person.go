@@ -1,9 +1,9 @@
-package main
+package mock
 
 import (
 	"fmt"
 
-	"mastering-go/mock/equipment"
+	"mastering-go/internal/pkg/mock/equipment"
 )
 
 type Person struct {

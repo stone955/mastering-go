@@ -1,4 +1,4 @@
-package main
+package btree
 
 import (
 	"fmt"
@@ -47,11 +47,4 @@ func insert(t *BinaryTree, value int) *BinaryTree {
 	}
 	t.Right = insert(t.Right, value)
 	return t
-}
-
-func main() {
-	tree := NewBinaryTree(10)
-	fmt.Println("The root of the tree is ", tree.Value)
-	FrontTraverse(tree)
-	fmt.Println()
 }
