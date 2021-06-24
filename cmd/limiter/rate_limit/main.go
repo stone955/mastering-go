@@ -25,10 +25,10 @@ func leakyBucket() gin.HandlerFunc {
 
 func main() {
 	r := gin.Default()
-
 	r.GET("/ping", leakyBucket(), func(c *gin.Context) {
 		c.JSON(http.StatusOK, true)
 	})
-
 	_ = r.Run(":8080")
+
+	// 使用压测工具ab: ab -n 10 -c 2 http://127.0.0.1:8080/ping
 }
